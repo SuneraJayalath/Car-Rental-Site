@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Cars | EasyCar Rentals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>   
+    <nav class="navbar">
+      <div class="logo">EasyCar Rentals</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Cars Section -->
+<section class="page-section">
+  <h2>Available Cars</h2>
+
+
+<div class="filters" style="text-align: center; margin-bottom: 2rem;">
+  <label for="carType">Filter by Type:</label>
+  <select id="carType">
+    <option value="all">All</option>
+    <option value="SUV">SUV</option>
+    <option value="Sedan">Sedan</option>
+    <option value="Hatchback">Hatchback</option>
+    <option value="Luxury">Luxury</option>
+  </select>
+</div>
+
+  <div class="car-list" id="carList"></div>
+  
+</section>
+
+<!-- Modal -->
+<div class="modal" id="carModal">
+  <div class="modal-content">
+    <span class="close-button" id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="" />
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+
+
+  <div style="text-align: center; margin-top: 3rem;">
+    <button onclick="history.back()" class="btn">← Go Back</button>
+    
+  </div>
+
+
+ 
+
+
+  <script src="cars.js"></script>
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
